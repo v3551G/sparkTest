@@ -56,7 +56,7 @@ object Test_example_NN {
     val train_d = randsamp3.map(f => (new BDM(1, 1, f(::, 0).data), f(::, 1 to -1)))
     //3 设置训练参数，建立模型
     // opts:迭代步长，迭代次数，交叉验证比例
-    val opts = Array(100.0, 50.0, 0.0)
+    val opts = Array(100.0, 10.0, 0.0)
     train_d.cache
     val numExamples = train_d.count()
     println(s"numExamples = $numExamples.")
