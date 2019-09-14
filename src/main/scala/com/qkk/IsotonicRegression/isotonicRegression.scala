@@ -67,6 +67,5 @@ object isotonicRegression {
     val modelPath = "src/main/scala/com/qkk/IsotonicRegression/IsotonicRegressionModelRes"
     model.save(sc, modelPath)
     var lmodel  = IsotonicRegressionModel.load(sc, modelPath)
-
   }
 }
