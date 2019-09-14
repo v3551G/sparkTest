@@ -8,7 +8,7 @@ import org.apache.spark.{SparkConf, SparkContext}
  * isotonic regression exercise
  *
  * @author: qkk
- * @date: 20190915
+ * @date: 20190914
  */
 object isotonicRegression {
   def main(args: Array[String]): Unit = {
